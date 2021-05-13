@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 600px;
+        max-width: 1260px;
+        width: 100%;
+        background: url('../img/background.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            >a {
+                color: white;
+                font-size: 25px;
+                font-weight: bold;
+                text-decoration: none;
+
+                img {
+                    padding-right: 15px;
+                    vertical-align: middle;
+                    transition: .3s;
+                }
+            }
+
+            .logo:hover img{
+                opacity: .7;
+            }
+
+            menu {
+                display: flex;
+                list-style: none;
+                text-transform: uppercase;
+
+                li {
+                    padding-left: 15px;
+
+                    a { 
+                        color: white;
+                        font-size: 20px;
+                        text-decoration: none;
+                        transition: .3s;
+
+                        &:hover {
+                            padding-bottom: 3px;
+                            color: #fc635e;
+                            border-bottom: 4px solid #fc635e;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mainText {
+            text-align: center;
+            h1 {
+                font-size: 50px;
+                text-transform: uppercase;
+                color: white;
+
+                span {
+                    color: #fc635e;
+                    font-weight: 400;
+                }
+            }
+
+            p {
+                color: white;
+                font-size: 24px;
+            }
+
+            a {
+                padding: 12px 28px;
+                color: #fc635e;
+                font-size: 24px;
+                text-decoration: none;
+                border: 2px solid #fc635e;
+                border-radius: .5rem;
+                transition: .3s;
+
+                &:hover {
+                    background-color: #fc635e;
+                    color: white;
+                }
+            }
+        }
+
+        .botHeader {
+            display: flex;
+            justify-content: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 28px;
+                height: 28px;
+                color: white;
+                font-size: 22px;
+                font-weight: 200;
+                text-decoration: none;
+                border-radius: 50%;
+                background-color: #fc635e;
+                transition: .3s;
+
+                &:hover {
+                    opacity: .7;
+                }
+
+            }
+        }
+
+    }
+}
