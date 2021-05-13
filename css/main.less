@@ -2,7 +2,20 @@ body {
 	max-width: 1260px;
 	margin: 0 auto;
 
-	a.arrowDown {
+	.section {
+		text-align: center;
+		color: #868686;
+
+		p {
+			font-size: 22px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 50px;
+			max-width: 510px;
+		}
+	}
+
+	.arrowDown {
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
@@ -23,7 +36,7 @@ body {
 		}
 	}
 
-	a.btn {
+	.btn {
 		padding: 12px 28px;
 		color: #fc635e;
 		font-size: 24px;
@@ -35,6 +48,36 @@ body {
 		&:hover {
 			background-color: #fc635e;
 			color: white;
+		}
+	}
+
+	.mainText {
+		text-align: center;
+		h1 {
+			font-size: 50px;
+			text-transform: uppercase;
+			color: white;
+
+			span {
+				color: #fc635e;
+				font-weight: 400;
+			}
+		}
+
+		p {
+			color: white;
+			font-size: 24px;
+		}
+	}
+
+	.subheading {
+		margin: initial;
+		font-size: 40px;
+		text-decoration: underline;
+		text-transform: uppercase;
+
+		span {
+			color: #fc635e;
 		}
 	}
 
@@ -94,48 +137,13 @@ body {
 				}
 			}
 		}
-
-		.mainText {
-			text-align: center;
-			h1 {
-				font-size: 50px;
-				text-transform: uppercase;
-				color: white;
-
-				span {
-					color: #fc635e;
-					font-weight: 400;
-				}
-			}
-
-			p {
-				color: white;
-				font-size: 24px;
-			}
-		}
 	}
 
 	.receive {
 		margin-top: 0;
 		padding: 70px 50px 10px 50px;
-		text-align: center;
-		color: #868686;
 
-		h1 {
-			margin: 0;
-			font-size: 40px;
-			text-decoration: underline;
-			text-transform: uppercase;
-
-			span {
-				color: #fc635e;
-			}
-		}
-
-		p {
-			font-size: 22px;
-			margin-bottom: 50px;
-		}
+		.section;
 	}
 
 	.icons {
@@ -171,5 +179,52 @@ body {
 		div {
 			padding: 15px;
 		}
+	}
+
+	.expand {
+		padding: 90px 160px 15px;
+		background: url(../img/bg_03.jpg) no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		.mainText {
+			padding: 100px 0;
+			margin-bottom: 60px;
+			border: 8px solid rgba(255, 255, 255, 0.1);
+
+			h1 {
+				margin: initial;
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	.our_process {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 50px 0 15px;
+
+		img {
+			display: block;
+			object-fit: cover;
+			object-position: center;
+			max-width: calc(100% - 20px);
+		}
+
+		.steps {
+			display: none;
+
+            h3 {
+                // max-width: 2rem;
+                font-size: 22px;
+                text-decoration: none;
+                border-bottom: 1px solid #adadad;
+            }
+		}
+
+        a {
+            margin-top: 10px;
+        }
 	}
 }

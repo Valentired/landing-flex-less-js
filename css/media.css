@@ -3,6 +3,20 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+
+    body .expand {
+        padding: 30px 30px 10px;
+    }
+
+    body .expand .mainText {
+        padding: 50px 10px;
+        margin-bottom: 40px;
+    }
+
+    body .expand .mainText h1 {
+        font-size: 30px;    
+        margin-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 549px) {
@@ -28,6 +42,31 @@
 		font-size: 18px;
 		font-weight: 300;
 	}
+
+    body .expand {
+        padding: 50px 20px 15px;
+    }
+
+    body .expand .mainText {
+        padding: 0;
+        margin-bottom: 60px;
+        border: none;
+    }
+
+    body .expand .mainText h1 {
+        font-size: 30px;    
+        margin-bottom: 50px;
+    }
+
+    body .our_process img {
+        display: none;
+    }
+
+     body .our_process .steps {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
 }
 
 @media screen and (max-width: 1260px) {
@@ -35,11 +74,11 @@
 		padding: 30px 20px;
 	}
 
-	body .receive h1 {
+	body .subheading  {
 		font-size: 26px;
 	}
 
-	body .receive p {
+	body .section p {
 		font-size: 18px;
 		margin-bottom: 20px;
 	}
